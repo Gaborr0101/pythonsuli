@@ -1,0 +1,1 @@
+print("soookat irtunk fuzetbe")
