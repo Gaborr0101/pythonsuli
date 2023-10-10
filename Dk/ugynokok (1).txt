@@ -1,0 +1,57 @@
+﻿Név	Típus	Régió	Eladott	Értékelés	Bevétel			Típus	Egységár (Ft)
+Magonyi Eta	Porci-Ca	Észak	590	715				Porci-Ca	49999
+Fleschman Márkó	Szipóka	Dombvidék	120	496				Szipóka	39999
+Aponyi Karina	Zugattyú	Közép	1021	212				Zugattyú	67999
+Ádám Turul	Porci-Ca	Tópart	1232	838				Orros	81999
+Pozsonyi Tiborc	Orros	Síkság	1437	404
+Váradi Tifani	Zugattyú	Észak	907	618
+Felzán Boldizsár	Szipóka	Síkság	454	449
+Kátai Adriána	Orros	Dombvidék	1060	838
+Kurucz Eta Ticiána	Orros	Közép	908	582
+Sánta Gergely	Orros	Közép	1261	394
+Zsugovszky Manfréd	Zugattyú	Tópart	1132	250
+Zsitvay Brúnó	Zugattyú	Dombvidék	1367	419
+Mészáros Ida Rebeka	Szipóka	Dombvidék	846	116
+Balázsi Boglárka	Zugattyú	Észak	460	714
+Eötvös Afrodité	Porci-Ca	Síkság	784	699
+Bulyákiné Bukovics Aranka	Szipóka	Tópart	917	269
+Balázsi Ticián	Szipóka	Síkság	1473	980
+Göbölyös Félix	Porci-Ca	Dombvidék	40	842
+Ormai Leopold	Porci-Ca	Síkság	344	766
+Maksay Lídia	Szipóka	Észak	56	191
+Davidovics Áchim	Porci-Ca	Tópart	656	571
+Módos Alina Réka	Porci-Ca	Észak	820	357
+Mezei Nándor Eduárd	Porci-Ca	Dombvidék	151	629
+Óváry Felicián	Orros	Dombvidék	920	376
+Müler Kamill	Szipóka	Közép	879	760
+Árki Katalin	Porci-Ca	Síkság	172	730
+Takács Tamás	Porci-Ca	Közép	1456	331
+Engelhardt Vica	Szipóka	Tópart	842	158
+Orosz Leopold	Szipóka	Tópart	169	754
+Hamburger Zénó	Zugattyú	Közép	1386	489
+Kerpen Eugén	Porci-Ca	Közép	323	868
+Tóbiás Domonkos	Porci-Ca	Dombvidék	738	861
+Bobrovszki Apolka	Porci-Ca	Észak	1227	857
+Rafajlovics Lehel	Orros	Tópart	686	754
+Felméri Milán	Orros	Észak	1381	820
+Lakat Edömér	Zugattyú	Tópart	1180	322
+Trombitás Alex	Szipóka	Észak	548	821
+Illés Izsák	Orros	Dombvidék	1050	877
+Gombár Oleg	Szipóka	Közép	1129	477
+Voigt Gréti	Orros	Észak	1469	545
+Baál Simon	Zugattyú	Dombvidék	931	872
+Pálovics Bence	Zugattyú	Dombvidék	574	359
+Selmeczi Tasziló Károly	Orros	Észak	251	558
+Fromm Eugén	Orros	Közép	1029	206
+Kádár Áronné	Zugattyú	Közép	1319	606
+Waldstein Trisztán	Orros	Síkság	603	195
+Parragh Villő Csilla	Zugattyú	Észak	788	921
+Fejér Jázmin	Szipóka	Síkság	583	689
+Pál Viktória	Szipóka	Észak	858	255
+Ignácz Laura	Zugattyú	Síkság	711	509
+Pozsonyi Ágost	Szipóka	Dombvidék	200	912
+Bársony Ágoston	Zugattyú	Síkság	291	865
+Kádár Gyárfás	Orros	Tópart	1080	396
+Gombos András	Zugattyú	Közép	987	540
+Korcsmáros Mihályné	Szipóka	Tópart	420	780
+Ambrus Dorotea	Szipóka	Dombvidék	1450	130
