@@ -22,7 +22,7 @@ while bekert != 0:
             for i in range(len(lista)):
                 print(lista[i]);
     if bekert == 1:
-        #HATOSLOTTÓ
+        #hatos
         hatosLista = []
 
         while len(hatosLista)<= 5:
@@ -34,7 +34,7 @@ while bekert != 0:
         kiiratas(hatosLista)
         print("*"*60)
     elif bekert == 3:
-        #SKANDINÁV LOTTÓ
+        #skandinav
 
         skandiLista = []
 
@@ -47,7 +47,7 @@ while bekert != 0:
         kiiratas(skandiLista)
         print("*"*60)
     elif bekert == 4:
-        #ÖTÖSLOTTÓ
+        #otos
         otosLista = []
 
         while len(otosLista)<= 4:
