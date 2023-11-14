@@ -106,14 +106,14 @@ tortenet=[
                 [
             6,#szál ID
             t.text["Felszálltam a 6:50-es buszra, nagyon sokan vannak, így álnom kell"], #szöveg
-            [t.text["buszról leszállva várjam meg a barátaimat"], t.text["buszról leszállva menjek a boltba"],t.text["buszról leszállva menjek az iskolába"]], #választái lehetőségek
-            [9,10,11] # hova ugorjon
+            [t.text["buszról leszállva várjam meg a barátaimat"],t.text["buszról leszállva menjek az iskolába"]], #választái lehetőségek
+            [12,13,] # hova ugorjon
         ],
                 [
             7,#szál ID
             t.text["Felszálltam a 7:05-ös buszra, sikerült egy helyet szereznem, így letudtam ülni"], #szöveg
-            [t.text["buszról leszállva várjam meg a barátaimat"], t.text["buszról leszállva menjek a boltba"], t.text["buszról leszállva menjek az iskolába"]], #választái lehetőségek
-            [9,10,11] # hova ugorjon
+            [t.text["buszról leszállva várjam meg a barátaimat"],t.text["buszról leszállva menjek az iskolába"]], #választái lehetőségek
+            [12,13,] # hova ugorjon
         ],
           [
             8,#szál ID
@@ -123,22 +123,30 @@ tortenet=[
         ],
           [
             9,#szál ID
-            t.text["Kissé hűvös van, kellene valami ruha. \nFelveszek egy nadrágot, meg egy pólót!"], #szöveg
-            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"],t.text["asd"]], #választái lehetőségek
-            [2,3,4,99] # hova ugorjon
+            t.text["A sofőr hülyén néz rám, miközben zsebre teszi a pénzt"], #szöveg
+            [t.text["buszról leszállva várjam meg a barátaimat"],t.text["buszról leszállva menjek az iskolába"]], #választái lehetőségek
+            [12,13,] # hova ugorjon
         ],
           [
             10,#szál ID
-            t.text["Kissé hűvös van, kellene valami ruha. \nFelveszek egy nadrágot, meg egy pólót!"], #szöveg
-            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"],t.text["asd"]], #választái lehetőségek
+            t.text["A földön hagytam a pénzt, én hülye!"], #szöveg
+            [t.text["buszról leszállva várjam meg a barátaimat"],t.text["buszról leszállva menjek az iskolába"]], #választái lehetőségek
             [2,3,4,5] # hova ugorjon
         ],
           [
             11,#szál ID
-            t.text["Kissé hűvös van, kellene valami ruha. \nFelveszek egy nadrágot, meg egy pólót!"], #szöveg
-            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"],t.text["asd"]], #választái lehetőségek
-            [2,3,4,5] # hova ugorjon
+            t.text["A pént boldogan felvettem a földről( :) )."], #szöveg
+            [t.text["buszról leszállva várjam meg a barátaimat"], t.text["Suliba menet elajándékozom a pénzt egy hajléktalannak"], t.text["buszról leszállva menjek az iskolába"]], #választái lehetőségek
+            [12,100,13] # hova ugorjon
         ],
+              [
+            11,#szál ID
+            t.text["A pént boldogan felvettem a földről( :) )."], #szöveg
+            [t.text["buszról leszállva várjam meg a barátaimat"], t.text["buszról leszállva menjek a boltba"], t.text["buszról leszállva menjek az iskolába"]], #választái lehetőségek
+            [2,3,4] # hova ugorjon
+        ],
+        
+        
     ]
 
 szalId=1

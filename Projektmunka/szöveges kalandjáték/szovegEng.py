@@ -23,6 +23,11 @@ text={"Reggel felébredtem. Mit tegyek?":"Reggel felébredtem. Mit tegyek?",
       "Szóljak a sofőrnek és adjam neki":"Szóljak a sofőrnek és adjam neki",
       "Hagyjam ott":"Hagyjam ott",
       "Vigyem el":"Vigyem el",
+      "A sofőr hülyén néz rám, miközben zsebre teszi a pénzt":"A sofőr hülyén néz rám, miközben zsebre teszi a pénzt",
+      "A földön hagytam a pénzt, én hülye!":"A földön hagytam a pénzt, én hülye!",
+      "A pént boldogan felvettem a földről( :) ).":"A pént boldogan felvettem a földről( :) ).",
+      "Suliba menet elajándékozom a pénzt egy hajléktalannak":"Suliba menet elajándékozom a pénzt egy hajléktalannak",
+      
       
       
 
