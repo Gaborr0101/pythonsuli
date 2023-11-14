@@ -88,14 +88,56 @@ tortenet=[
         [
             4,#szál ID
             t.text["Kissé hűvös van, kellene valami ruha. \nFelveszek egy nadrágot, meg egy pólót!"], #szöveg
-            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"],t.text["asd"]], #választái lehetőségek
+            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"],t.text["Elindulok a buszmegállóba"]], #választái lehetőségek
             [2,3,4,5] # hova ugorjon
         ],
         [
-            5,#szál ID
+            99,#szál ID
             t.text["asd"], #szöveg
             [], #választái lehetőségek
             [] #hova ugorjon
+        ],
+                [
+            5,#szál ID
+            t.text["Elindultam a buszmegállóba. \nMelyik buszra szálljak fel?"], #szöveg
+            [t.text["6:50"], t.text["7:05"], t.text["7:20"]], #választái lehetőségek
+            [6,7,8,] # hova ugorjon
+        ],
+                [
+            6,#szál ID
+            t.text["Felszálltam a 6:50-es buszra, nagyon sokan vannak, így álnom kell"], #szöveg
+            [t.text["buszról leszállva várjam meg a barátaimat"], t.text["buszról leszállva menjek a boltba"],t.text["buszról leszállva menjek az iskolába"]], #választái lehetőségek
+            [9,10,11] # hova ugorjon
+        ],
+                [
+            7,#szál ID
+            t.text["Felszálltam a 7:05-ös buszra, sikerült egy helyet szereznem, így letudtam ülni"], #szöveg
+            [t.text["buszról leszállva várjam meg a barátaimat"], t.text["buszról leszállva menjek a boltba"], t.text["buszról leszállva menjek az iskolába"]], #választái lehetőségek
+            [9,10,11] # hova ugorjon
+        ],
+          [
+            8,#szál ID
+            t.text["Felszálltam a 7:20-as buszra, nem voltak a buszon, így leültem.\nTaláltam a földön 500Ft-ot"], #szöveg
+            [t.text["Szóljak a sofőrnek és adjam neki"], t.text["Hagyjam ott"], t.text["Vigyem el"]], #választái lehetőségek
+            [9,10,11] # hova ugorjon
+        ],
+          [
+            9,#szál ID
+            t.text["Kissé hűvös van, kellene valami ruha. \nFelveszek egy nadrágot, meg egy pólót!"], #szöveg
+            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"],t.text["asd"]], #választái lehetőségek
+            [2,3,4,99] # hova ugorjon
+        ],
+          [
+            10,#szál ID
+            t.text["Kissé hűvös van, kellene valami ruha. \nFelveszek egy nadrágot, meg egy pólót!"], #szöveg
+            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"],t.text["asd"]], #választái lehetőségek
+            [2,3,4,5] # hova ugorjon
+        ],
+          [
+            11,#szál ID
+            t.text["Kissé hűvös van, kellene valami ruha. \nFelveszek egy nadrágot, meg egy pólót!"], #szöveg
+            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"],t.text["asd"]], #választái lehetőségek
+            [2,3,4,5] # hova ugorjon
         ],
     ]
 
@@ -118,7 +160,7 @@ while True:
 
     menuPont = menu(tortenet[szalIndex][2])
 
-    if menuPont == 68:
+    if menuPont == 98:
         break
 
     szalId=tortenet[szalIndex][3][menuPont]
