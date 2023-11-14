@@ -6,6 +6,7 @@ text={"Reggel felébredtem. Mit tegyek?":"wát to do",
       "Kellene valamit enni! Anya csinált valamit? Nézzük meg!":"Kellene valamit enni! Anya csinált valamit? Nézzük meg!",
       "Kissé hűvös van, kellene valami ruha. \nFelveszek egy nadrágot, meg egy pólót!":"Kissé hűvös van, kellene valami ruha. \nFelveszek egy nadrágot, meg egy pólót!",
       "Véde mindennek....":"Véde mindennek....",
-      "66-os parancs":"66-os parancs"
+      "66-os parancs":"66-os parancs",
+      "asd":"asd"
  
    }

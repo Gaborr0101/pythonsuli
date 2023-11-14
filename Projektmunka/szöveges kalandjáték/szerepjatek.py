@@ -88,12 +88,12 @@ tortenet=[
         [
             4,#szál ID
             t.text["Kissé hűvös van, kellene valami ruha. \nFelveszek egy nadrágot, meg egy pólót!"], #szöveg
-            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"],t.text["66-os parancs"]], #választái lehetőségek
-            [2,3,4,66] # hova ugorjon
+            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"],t.text["asd"]], #választái lehetőségek
+            [2,3,4,5] # hova ugorjon
         ],
         [
-            66,#szál ID
-            t.text["Véde mindennek...."], #szöveg
+            5,#szál ID
+            t.text["asd"], #szöveg
             [], #választái lehetőségek
             [] #hova ugorjon
         ],
