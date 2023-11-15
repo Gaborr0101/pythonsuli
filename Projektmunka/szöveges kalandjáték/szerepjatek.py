@@ -33,15 +33,15 @@ dEng={ "Reggel felébredtem. Mit tegyek?":"woke up, what to do?",
 #lehetne igy is:
 
 #l={"Reggel felébredtem. Mit tegyek?",
-#   "fogmosás",
-#   "reggeli",
-#   "öltözés"
-#   }
+# "fogmosás",
+# "reggeli",
+# "öltözés"
+# }
 #lEng={"woke up, what to do?".
-#      "brush teeth",
-#      "breakfast",
-#      "get dressed"
-#    }
+# "brush teeth",
+# "breakfast",
+# "get dressed"
+# }
 
 #import szovegHun as t
 # nyelvvalasztas
@@ -59,10 +59,10 @@ while True:
 
 if nyelvid[nyelvlista[nyelvvalasztas]] =="szovegHun":
            import szovegHun as t
-        
+
 elif nyelvid[nyelvlista[nyelvvalasztas]] =="szovegEng":
              import szovegEng as t
-             
+
 
 #import nyelvid[nyelvlista[][nyelvvalasztas] as t
 
@@ -131,7 +131,7 @@ tortenet=[
             10,#szál ID
             t.text["A földön hagytam a pénzt, én hülye!"], #szöveg
             [t.text["buszról leszállva várjam meg a barátaimat"],t.text["buszról leszállva menjek az iskolába"]], #választái lehetőségek
-            [2,3,4,5] # hova ugorjon
+            [12,13,] # hova ugorjon
         ],
           [
             11,#szál ID
@@ -140,13 +140,25 @@ tortenet=[
             [12,100,13] # hova ugorjon
         ],
               [
-            11,#szál ID
-            t.text["A pént boldogan felvettem a földről( :) )."], #szöveg
-            [t.text["buszról leszállva várjam meg a barátaimat"], t.text["buszról leszállva menjek a boltba"], t.text["buszról leszállva menjek az iskolába"]], #választái lehetőségek
-            [2,3,4] # hova ugorjon
+            100,#szál ID
+            t.text["A csöves örült a pénznek, szebbé tettem a napját\nAmiért kedves votam, kaptam tőle egy szuperkártyát"], #szöveg
+            [t.text["A suliba beérve menjek a teremhez"], t.text["A suliba beérve menjek a barátaimhoz"]], #választái lehetőségek
+            [14,15] # hova ugorjon
         ],
-        
-        
+        [
+            12,#szál ID
+            t.text["megvártam a barátaimat és együtt mentünk iskolába. "], #szöveg
+            [t.text["a suliba beérve menjünk együtt a teremhez"], t.text["Suliba beérve menjünk a többiekhez"]], #választái lehetőségek
+            [14,15] # hova ugorjon
+        ],
+                [
+            13,#szál ID
+            t.text["Egyedül megyek az iskolába, útközben találkoztam a barátaimmal."], #szöveg
+            [t.text["a suliba beérve menjünk együtt a teremhez"], t.text["Suliba beérve menjünk a többiekhez"]], #választái lehetőségek
+            [14,15] # hova ugorjon
+        ],
+
+
     ]
 
 szalId=1
@@ -162,7 +174,7 @@ while True:
     szalIndex=temp.index(szalId)
 
     print(tortenet[szalIndex][1])
-    
+
     if tortenet[szalIndex][2]==[]:
         break
 
@@ -172,10 +184,6 @@ while True:
         break
 
     szalId=tortenet[szalIndex][3][menuPont]
-        
+
 
 print("The End")
-
-
-
-

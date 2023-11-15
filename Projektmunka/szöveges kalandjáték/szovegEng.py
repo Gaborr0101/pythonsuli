@@ -27,6 +27,15 @@ text={"Reggel felébredtem. Mit tegyek?":"Reggel felébredtem. Mit tegyek?",
       "A földön hagytam a pénzt, én hülye!":"A földön hagytam a pénzt, én hülye!",
       "A pént boldogan felvettem a földről( :) ).":"A pént boldogan felvettem a földről( :) ).",
       "Suliba menet elajándékozom a pénzt egy hajléktalannak":"Suliba menet elajándékozom a pénzt egy hajléktalannak",
+      "buszról leszállva várjam meg a barátaimat":"buszról leszállva várjam meg a barátaimat",
+      "buszról leszállva menjek az iskolába":"buszról leszállva menjek az iskolába",
+      "A csöves örült a pénznek, szebbé tettem a napját\nAmiért kedves votam, kaptam tőle egy szuperkártyát":"A csöves örült a pénznek, szebbé tettem a napját\nAmiért kedves votam, kaptam tőle egy szuperkártyát",
+      "A suliba beérve menjek a teremhez":"A suliba beérve menjek a teremhez",
+      "A suliba beérve menjek a barátaimhoz":"A suliba beérve menjek a barátaimhoz",
+      "megvártam a barátaimat és együtt mentünk iskolába. ":"megvártam a barátaimat és együtt mentünk iskolába. ",
+      "a suliba beérve menjünk együtt a teremhez":"a suliba beérve menjünk együtt a teremhez",
+      "Suliba beérve menjünk a többiekhez":"Suliba beérve menjünk a többiekhez",
+      "Egyedül megyek az iskolába, útközben találkoztam a barátaimmal.":"Egyedül megyek az iskolába, útközben találkoztam a barátaimmal.",
       
       
       
