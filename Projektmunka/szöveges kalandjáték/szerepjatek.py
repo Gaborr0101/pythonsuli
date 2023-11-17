@@ -58,10 +58,17 @@ while True:
         print("Sajnos ez a fordítás még nem készült el!")
 
 if nyelvid[nyelvlista[nyelvvalasztas]] =="szovegHun":
+<<<<<<< HEAD
            import szovegHUN as t
 
 elif nyelvid[nyelvlista[nyelvvalasztas]] =="szovegEng":
             import szovegEng as t
+=======
+           import szovegHun as t
+
+elif nyelvid[nyelvlista[nyelvvalasztas]] =="szovegEng":
+             import szovegEng as t
+>>>>>>> d57e548b6b6e6ffdcd31c0381af7cb65c9ec9601
 
 
 #import nyelvid[nyelvlista[][nyelvvalasztas] as t
@@ -134,6 +141,7 @@ tortenet=[
             [t.text["buszról leszállva várjam meg a barátaimat"], t.text["buszról leszállva menjek az iskolába"]], #választái lehetőségek
             [12,13] # hova ugorjon
         ],
+<<<<<<< HEAD
               
         [
             12,#szál ID
@@ -141,10 +149,25 @@ tortenet=[
             [t.text["a suliba beérve menjünk együtt a teremhez"], t.text["Suliba beérve menjünk a többiekhez"]], #választái lehetőségek
             [14,14] # hova ugorjon
         ],
+=======
+              [
+            100,#szál ID
+            t.text["A csöves örült a pénznek, szebbé tettem a napját\nAmiért kedves votam, kaptam tőle egy szuperkártyát"], #szöveg
+            [t.text["A suliba beérve menjek a teremhez"], t.text["A suliba beérve menjek a barátaimhoz"]], #választái lehetőségek
+            [14,15] # hova ugorjon
+        ],
+        [
+            12,#szál ID
+            t.text["megvártam a barátaimat és együtt mentünk iskolába. "], #szöveg
+            [t.text["a suliba beérve menjünk együtt a teremhez"], t.text["Suliba beérve menjünk a többiekhez"]], #választái lehetőségek
+            [14,15] # hova ugorjon
+        ],
+>>>>>>> d57e548b6b6e6ffdcd31c0381af7cb65c9ec9601
                 [
             13,#szál ID
             t.text["Egyedül megyek az iskolába, útközben találkoztam a barátaimmal."], #szöveg
             [t.text["a suliba beérve menjünk együtt a teremhez"], t.text["Suliba beérve menjünk a többiekhez"]], #választái lehetőségek
+<<<<<<< HEAD
             [14,14] # hova ugorjon
         ],
                 [
@@ -224,6 +247,11 @@ tortenet=[
            
 
 
+=======
+            [14,15] # hova ugorjon
+        ],
+
+>>>>>>> d57e548b6b6e6ffdcd31c0381af7cb65c9ec9601
 
     ]
 
