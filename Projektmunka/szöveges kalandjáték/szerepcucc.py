@@ -259,11 +259,6 @@ tortenet=[
             [] # hova ugorjon
         ],
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 4f47dcbac0df6adc9bccae5ec170f2db8b210a6a
     ]
 
 szalId=1
