@@ -58,10 +58,10 @@ while True:
         print("Sajnos ez a fordítás még nem készült el!")
 
 if nyelvid[nyelvlista[nyelvvalasztas]] =="szovegHun":
-           import szovegHun as t
+           import szovegHUN as t
 
 elif nyelvid[nyelvlista[nyelvvalasztas]] =="szovegEng":
-             import szovegEng as t
+            import szovegEng as t
 
 
 #import nyelvid[nyelvlista[][nyelvvalasztas] as t
@@ -70,20 +70,20 @@ tortenet=[
         [
             1,#szál ID
             t.text["Reggel felébredtem. Mit tegyek?"], #szöveg
-            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"]], #választái lehetőségek
-            [2,3,4] # hova ugorjon
+            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"],t.text["Elindulok a buszmegállóba"]], #választái lehetőségek
+            [2,3,4,5] # hova ugorjon
         ],
         [
             2,#szál ID
             t.text["Elmegyek fogat mosni. Sikálom rendesen, ahogy kell!"], #szöveg
-            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"]], #választái lehetőségek
-            [2,3,4] # hova ugorjon
+            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"],t.text["Elindulok a buszmegállóba"]], #választái lehetőségek
+            [2,3,4,5] # hova ugorjon
         ],
         [
             3,#szál ID
             t.text[f"Kellene valamit enni! Anya csinált valamit? Nézzük meg!"], #szöveg
-            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"]], #választái lehetőségek
-            [2,3,4] # hova ugorjon
+            [t.text["fogmosás"], t.text["reggeli"], t.text["öltözés"],t.text["Elindulok a buszmegállóba"]], #választái lehetőségek
+            [2,3,4,5] # hova ugorjon
         ],
         [
             4,#szál ID
@@ -149,14 +149,40 @@ tortenet=[
             12,#szál ID
             t.text["megvártam a barátaimat és együtt mentünk iskolába. "], #szöveg
             [t.text["a suliba beérve menjünk együtt a teremhez"], t.text["Suliba beérve menjünk a többiekhez"]], #választái lehetőségek
-            [14,15] # hova ugorjon
+            [14,14] # hova ugorjon
         ],
                 [
             13,#szál ID
             t.text["Egyedül megyek az iskolába, útközben találkoztam a barátaimmal."], #szöveg
             [t.text["a suliba beérve menjünk együtt a teremhez"], t.text["Suliba beérve menjünk a többiekhez"]], #választái lehetőségek
-            [14,15] # hova ugorjon
+            [14,14] # hova ugorjon
         ],
+                [
+            14,#szál ID
+            t.text["Odaértünk a teremhez. Ott voltak a többiek. \nNagyon kell pipilni"], #szöveg
+            [t.text["óráról majd kikéretőzök"], t.text["menjek el WC-re"]], #választái lehetőségek
+            [15,15] # hova ugorjon
+        ],
+                [
+            15,#szál ID
+            t.text["Pipiltem \nÓ kicsit mellément. Hoppá! ÁÁÁÁÁÁ! \nElestél és beverted a fejedet...\nEgy földalatti szobában ébredtem fel. Mit tegyek?"], #szöveg
+            [t.text["Nézzek körül"], t.text["Várjak, hátha csak képzelődöm"],], #választái lehetőségek
+            [16,17] # hova ugorjon
+        ],
+                            [
+            16,#szál ID
+            t.text["Körülnéztem, csupán egy út vezet kifelé a szobából"], #szöveg
+            [t.text["kimenjek rajta"], t.text["Körülnézzek mégegyszer"],], #választái lehetőségek
+            [18,19] # hova ugorjon
+        ],
+                            [
+            17,#szál ID
+            t.text["Ez nem képzelődés, jobb lenne inkább körülnézni:)"], #szöveg
+            [t.text["Körülnézek"],], #választái lehetőségek
+            [18,19] # hova ugorjon
+        ]
+
+
 
 
     ]

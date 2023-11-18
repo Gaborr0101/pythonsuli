@@ -36,7 +36,18 @@ text={"Reggel felébredtem. Mit tegyek?":"Reggel felébredtem. Mit tegyek?",
       "a suliba beérve menjünk együtt a teremhez":"a suliba beérve menjünk együtt a teremhez",
       "Suliba beérve menjünk a többiekhez":"Suliba beérve menjünk a többiekhez",
       "Egyedül megyek az iskolába, útközben találkoztam a barátaimmal.":"Egyedül megyek az iskolába, útközben találkoztam a barátaimmal.",
-      
+      "Odaértünk a teremhez. Ott voltak a többiek. \nNagyon kell pipilni":"Odaértünk a teremhez. Ott voltak a többiek. \nNagyon kell pipilni",
+      "óráról majd kikéretőzök":"óráról majd kikéretőzök",
+      "menjek el WC-re":"menjek el WC-re",
+      "Pipiltem \nÓ kicsit mellément. Hoppá! ÁÁÁÁÁÁ! \nElestél és beverted a fejedet...\nEgy földalatti szobában ébredtem fel. Mit tegyek?":"Pipiltem \nÓ kicsit mellément. Hoppá! ÁÁÁÁÁÁ! \nElestél és beverted a fejedet...\nEgy földalatti szobában ébredtem fel. Mit tegyek?",
+      "Nézzek körül":"Nézzek körül",
+      "Keressek kijáratot":"Keressek kijáratot",
+      "Körülnéztem, csupán egy út vezet kifelé a szobából":"Körülnéztem, csupán egy út vezet kifelé a szobából",
+      "kimenjek rajta":"kimenjek rajta",
+      "Várjak, hátha csak képzelődöm":"Várjak, hátha csak képzelődöm",
+      "Körülnézzek mégegyszer":"Körülnézzek mégegyszer",
+      "Ez nem képzelődés, jobb lenne inkább körülnézni:)":"Ez nem képzelődés, jobb lenne inkább körülnézni:)",
+      "Körülnézek":"Körülnézek",
       
       
 
