@@ -77,6 +77,7 @@ text={"Reggel felébredtem. Mit tegyek?":"Reggel felébredtem. Mit tegyek?",
       "Csatlakozol te is a terv megbeszéléséhez":"Csatlakozol te is a terv megbeszéléséhez",
       "Benyitsz a titkos ajtón, ami egy mély aknába nyílik.\n Leesel a mélybe, ahol más hozzád hasonló pisiben elcsúszó kölök tervezi a szabadulást.":"Benyitsz a titkos ajtón, ami egy mély aknába nyílik.\n Leesel a mélybe, ahol más hozzád hasonló pisiben elcsúszó kölök tervezi a szabadulást.",
       "Mivel kimaradtál, nem bírták a képed...\n péppé lettél verve...(R.I.P.)":"Mivel kimaradtál, nem bírták a képed...\n péppé lettél verve...(R.I.P.)",
+<<<<<<< HEAD:Projektmunka/szöveges kalandjáték/szovegHun.py
       "Kifutsz és eltorlaszolod az ajtót a folyosón lévő szekrénnyel. \nMelyik másik ajtót válasszam?":"Kifutsz és eltorlaszolod az ajtót a folyosón lévő szekrénnyel. \nMelyik másik ajtót válasszam?",
       "A lovag kiüti a kezedből a kardot és földhözvág. Ez bukta!!":"A lovag kiüti a kezedből a kardot és földhözvág. Ez bukta!!",
       "Megbeszéltétek, hogy felmásztok a szakadékba...\n hát nem leestél? (de) \n legalább szépet estél...\nThe End":"Megbeszéltétek, hogy felmásztok a szakadékba...\n hát nem leestél? (de) \n legalább szépet estél...\nThe End",
@@ -85,6 +86,11 @@ text={"Reggel felébredtem. Mit tegyek?":"Reggel felébredtem. Mit tegyek?",
       "A sárkány tüzet okád rád, majd az égő fájdalom közben rángatózva felébredsz a suli WC-ben :)\nThe End":"A sárkány tüzet okád rád, majd az égő fájdalom közben rángatózva felébredsz a suli WC-ben :)\nThe End",
       "Mivel kimaradtál, nem bírták a képed...\n péppé lettél verve...(R.I.P.)\nThe End":"Mivel kimaradtál, nem bírták a képed...\n péppé lettél verve...(R.I.P.)\nThe End",
       "Végre újra pipiltem.\n ÁÁÁÁÁÁÁÁ! \nMár megint elestél és beverted a fejed...\n felébredtél a suli WC-ben":"Végre újra pipiltem.\n ÁÁÁÁÁÁÁÁ! \nMár megint elestél és beverted a fejed...\n felébredtél a suli WC-ben",
+=======
+      "":"",
+      "A lovag kiüti a kezedből a kardot és földhözvág":"A lovag kiüti a kezedből a kardot és földhözvág",
+      "A lovag kiüti a kezedből a kardot és földhözvág":"A lovag kiüti a kezedből a kardot és földhözvág",
+>>>>>>> 4f47dcbac0df6adc9bccae5ec170f2db8b210a6a:Projektmunka/szöveges kalandjáték/hunszoveg.py
     
       "Kimentem az ajtón, a másik szobában 3 ajtót látok. \nMelyiken menjek be?":"Kimentem az ajtón, a másik szobában 3 ajtót látok. \nMelyiken menjek be?",
       "Elmentem pipilni...\nPipiltem \nÓ kicsit mellément. Hoppá! ÁÁÁÁÁÁ! \nElestél a saját pipidben és beverted a fejedet...\nEgy földalatti szobában ébredtem fel. Mit tegyek?":"Elmentem pipilni...\nPipiltem \nÓ kicsit mellément. Hoppá! ÁÁÁÁÁÁ! \nElestél a saját pipidben és beverted a fejedet...\nEgy földalatti szobában ébredtem fel. Mit tegyek?",
