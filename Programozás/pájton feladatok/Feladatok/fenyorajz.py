@@ -2,6 +2,11 @@
 
 from tkinter import *
 import math
+import random
+
+
+
+
 
 def eltol(pontok,x,y):
     for i in range(0,len(pontok),2):
@@ -24,6 +29,19 @@ def nagyit(pontok,x,y=-1):
             else:
                 pontok[i]*=y
     return pontok
+
+def fasorsol(darab):
+    lista=[]
+
+    temp=[]
+    temp.append(random.randint(0,1))
+    temp.append(random.randint(0,600))
+    temp.append(random.randint(0,600))
+    temp.append(random.randint(20,30)/100)
+
+    return lista
+
+
 #create an instance of tkinter frame or window 
 win=Tk()
 
@@ -75,6 +93,11 @@ fenyo2=[200,0,
 fenyo2=nagyit(fenyo2,0.5,1)
 fenyo2=eltol(fenyo2,100,100)
 canvas.create_line(fenyo2,width=5, fill="green")
+
+
+
+
+
 
 
 
