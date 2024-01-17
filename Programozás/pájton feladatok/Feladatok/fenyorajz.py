@@ -3,7 +3,7 @@ import math
 import random
 
 #eltolás
-def eltolas(pontok,x,y):
+def eltol(pontok,x,y):
     for i in range(0,len(pontok),2):
         pontok[i]+=x
         pontok[i+1]+=y
@@ -31,14 +31,29 @@ def forgatpont(x,y,szog):
 
 
 def forgat(lista,szog,oY=0,oX=0):
-    lista=eltolas(lista,-oX,-oY)
+    lista=eltol(lista,-oX,-oY)
 
     for i in range(0, len(lista),2):
         lista[i],lista[i+1]=forgatpont(lista[i],lista[i+1],szog)
 
-    lista=eltolas(lista,oX,oY)
+    lista=eltol(lista,oX,oY)
 
     return lista
+
+
+def kozepszamol(lista):
+    x=0
+    y=0
+    for i in range(lan(lista)):
+        if i%2==0:
+            x+=lista[i]
+        else:
+            y+=lista[i]
+
+    x=x/(len(lista)/2)
+    y=y/len(lista)*2
+
+    return x,y
 
 
 
@@ -67,10 +82,10 @@ canvas.pack(fill = BOTH, expand = 1)
 pontok=[40,40,400,40,400,400,40,400,40,40]
 
 #canvas.create_line(pontok,width=5,fill="blue")
-#canvas.create_line(eltolas(pontok,100,200),width=5,fill="blue")
+#canvas.create_line(eltol(pontok,100,200),width=5,fill="blue")
 
 fenyofa=[200,0,0,400,190,400,190,500,210,500,210,400,400,400,200,0]
-pontok=eltolas(fenyofa,10,10)
+pontok=eltol(fenyofa,10,10)
 #canvas.create_line(pontok,width=5,fill="green")
 
 fenyo2=[200,0,
@@ -91,7 +106,7 @@ fenyo2=[200,0,
         200,0]
 
 fenyo2=nagyit(fenyo2,2,1)
-fenyo2=eltolas(fenyo2,0.1,0.2)
+fenyo2=eltol(fenyo2,0.1,0.2)
 fenyo2=forgat(fenyo2,10)
 canvas.create_line(fenyo2,width=5,fill="green")
 
