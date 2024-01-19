@@ -30,7 +30,17 @@ def forgatpont(x,y,szog):
 
 
 
-def forgat(lista,szog,oY=0,oX=0):
+def forgat(lista,szog,oY="",oX=""):
+    
+    #kX,kY=kozepszamol(fenyo2)
+    if oX=="" and oY=="":
+        oX,oY=kozepszamol(lista)
+    elif oX==""or oY=="":
+        return lista
+
+
+
+
     lista=eltol(lista,-oX,-oY)
 
     for i in range(0, len(lista),2):
@@ -44,7 +54,7 @@ def forgat(lista,szog,oY=0,oX=0):
 def kozepszamol(lista):
     x=0
     y=0
-    for i in range(lan(lista)):
+    for i in range(len(lista)):
         if i%2==0:
             x+=lista[i]
         else:
@@ -59,6 +69,8 @@ def kozepszamol(lista):
 
 def fasorsol(db):
     lista=[]
+
+    
     temp=[]
     temp.append(random.randint(0,1))
     temp.append(random.randint(0,600))
@@ -109,6 +121,20 @@ fenyo2=nagyit(fenyo2,2,1)
 fenyo2=eltol(fenyo2,0.1,0.2)
 fenyo2=forgat(fenyo2,10)
 canvas.create_line(fenyo2,width=5,fill="green")
+
+fenyo2=nagyit(fenyo2,1,1)
+fenyo2=eltol(fenyo2,0,0)
+
+
+kX,kY=kozepszamol(fenyo2)
+
+
+fenyo2=forgat(fenyo2,15,kX,kY)
+canvas.create_line(fenyo2,width=5,fill="blue")
+
+
+
+
 
 
 
