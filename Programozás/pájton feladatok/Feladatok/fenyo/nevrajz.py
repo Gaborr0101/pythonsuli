@@ -24,17 +24,26 @@ gbetu = [
               
 
 
-gbetu2=[]
+"""gbetu2=[]
 
 for e in gbetu:
         e=transzformaciok.nagyit(e,1)
         e=transzformaciok.eltol(e, 100, 100)
         e=transzformaciok.forgat(e, 45)
         gbetu2.append(e)
+"""
 #print(gbetu2)
-gbetu2=transzformaciok.forgat(gbetu2,-45)
+gbetu2=transzformaciok.forgat(gbetu,45)
+gbetu2=transzformaciok.nagyit(gbetu2,2)
+gbetu2=transzformaciok.eltol(gbetu2,10,0)
 
-for e in gbetu2:
+
+canvas.create_line(gbetu,width=5,fill="black")
+"""for e in gbetu2:
         canvas.create_line(e,width=5,fill="black")
+"""        
+       
+
+    
 
 win.mainloop()

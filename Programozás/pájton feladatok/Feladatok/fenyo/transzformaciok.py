@@ -5,18 +5,18 @@ import math
 def eltol(pontok,x,y):
         if isinstance(pontok[0],list):
             for i in range(len(pontok)):
-                pontok[i]=forgat(pontok[i],pontok,x,y)
+                pontok[i]=eltol(pontok[i],x,y)
         else:
             for i in range(0,len(pontok),2):
 
-            pontok[i]+=x
-            pontok[i+1]+=y
+                pontok[i]+=x
+                pontok[i+1]+=y
         return pontok
 
 def nagyit(pontok,x,y=-1):
         if isinstance(pontok[0],list):
             for i in range(len(pontok)):
-                pontok[i]=forgat(pontok[i],pontok,x,y)
+                pontok[i]=nagyit(pontok[i],x,y)
         else:
             if y==-1:
                 for i in range(len(pontok)):
@@ -41,16 +41,16 @@ def forgatpont(x,y,szog):
 def forgat(lista,szog,oY="",oX=""):
 
 
+    if oX=="" and oY=="":
+         oX,oY=kozepszamol(lista)
+        
+    elif oX=="" or oY=="":
+        return lista
     if isinstance(lista[0],list):
         for i in range(len(lista)):
             lista[i]=forgat(lista[i],szog,oX,oY)
     else:
-        #kX,kY=kozepszamol(fenyo2)
-        if oX=="" and oY=="":
-            oX,oY=kozepszamol(lista)
         
-        elif oX=="" or oY=="":
-            return lista
         
         lista=eltol(lista,-oX,-oY)
 
@@ -84,6 +84,10 @@ def kozepszamol(lista):
             y=y/len(lista)*2
 
         return x,y
+
+
+
+
 
 if __name__ == '__main__':
     print("rendesen elindítva")
