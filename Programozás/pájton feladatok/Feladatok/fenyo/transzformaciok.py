@@ -13,6 +13,7 @@ def eltol(pontok,x,y):
                 pontok[i+1]+=y
         return pontok
 
+
 def nagyit(pontok,x,y=-1):
         if isinstance(pontok[0],list):
             for i in range(len(pontok)):
@@ -37,29 +38,27 @@ def forgatpont(x,y,szog):
     return x2,y2
 
 
+def forgat(lista,szog,oX="",oY=""):
+	#a forgatás középpontjának kiszámítása, minden vonal esetén
+	if oX=="" and oY=="":
+		oX,oY=kozepszamol(lista)
+	elif oX=="" or oY=="":
+		return lista
+		
+	if isinstance(lista[0], list):
+		for i in range(len(lista)):
+			lista[i]=forgat(lista[i],szog,oX,oY)
 
-def forgat(lista,szog,oY="",oX=""):
+	else:
+		
+		lista=eltol(lista,-oX,-oY)
 
+		for i in range(0,len(lista),2):
+			lista[i],lista[i+1]=forgatpont(lista[i],lista[i+1],szog)
 
-    if oX=="" and oY=="":
-         oX,oY=kozepszamol(lista)
-        
-    elif oX=="" or oY=="":
-        return lista
-    if isinstance(lista[0],list):
-        for i in range(len(lista)):
-            lista[i]=forgat(lista[i],szog,oX,oY)
-    else:
-        
-        
-        lista=eltol(lista,-oX,-oY)
+		lista=eltol(lista,oX,oY)
 
-        for i in range(0, len(lista),2):
-            lista[i],lista[i+1]=forgatpont(lista[i],lista[i+1],szog)
-
-        lista=eltol(lista,oX,oY)
-
-    return lista
+	return lista
 
 
 def kozepszamol(lista):
@@ -86,7 +85,13 @@ def kozepszamol(lista):
         return x,y
 
 
-
+def masol(lista):
+	uj=[]
+	if isinstance(lista[0],list):
+		uj=[masol(belsoLista) for belsoLista in lista]
+	else:
+		uj=[belsoErtek for belsoErtek in lista]
+	return uj
 
 
 if __name__ == '__main__':
