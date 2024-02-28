@@ -7,12 +7,42 @@
 from tkinter import *
 import random
 
+torlendo=[]
+pontszoveg=[]
+
+def kajacheck():
+    global labdaListaHossz
+    global pontszoveg
+
+    f=canvas.bbox(labdaLista[-1])
+    fkozep=[(f[0]+f[2])/2,(f[1]+f[3])/2]
+   
+    for egyKaja in kajak:
+        k=canvas.bbox(egyKaja)
+        kkozep=[(k[0]+k[2])/2,(k[1]+k[3])/2]
+
+        x=fkozep[0]-kkozep[0]
+        y=fkozep[1]-kkozep[1]
+
+
+        if x**2+y**2 <= ((labdaSize+kajaSize)*0.5)**2:
+            print("hamm!")
+            canvas.delete(egyKaja)
+            kajak.remove(egyKaja)
+            labdaListaHossz+=1
+            canvas.delete(pontszoveg)
+            canvas.create_text(300,50,text="pontszam:"+(str(labdaListaHossz))),
+            fill="black",
+            font=('Helvetica 15 bold')
+
+
+
 def rajzol ():
     
     #labdaColor, red, green, blue=atmenetColor(red,green,blue)
     #print(labdaColor)
-    labdaPos[0]+= labdaSpeed[0]*labdaSize
-    labdaPos[1]+= labdaSpeed[1]*labdaSize
+    labdaPos[0]+= labdaSpeed[0]*(labdaSize+2)
+    labdaPos[1]+= labdaSpeed[1]*(labdaSize+2)
 
     if labdaPos[0] > win.winfo_width() or labdaPos[0]<0:
         labdaSpeed[0]*=-1
@@ -22,14 +52,29 @@ def rajzol ():
         labdaColor = randomcolor()
 
     labdaLista.append(canvas.create_oval(labdaPos[0],labdaPos[1],labdaPos[0]+labdaSize,labdaPos[1]+labdaSize, fill= "green", outline = ""))
+    
+    
 
     if len(labdaLista) > labdaListaHossz:
         canvas.delete(labdaLista[0])
         labdaLista.pop(0)
+    
 
-    win.after(jatekSpeed,rajzol)
+    utkozes()
+    kajacheck()
+    
 
+    if not halal:
+        win.after(jatekSpeed,rajzol)
+
+   
+halal=False
 kajak= []
+
+
+
+
+
 
 def kaja ():
     x= random.randint(0,win.winfo_width()-kajaSize)
@@ -82,6 +127,7 @@ kajaSpeed = 5000
 jatekHatter = "lightgray"
 
 def atmenetColor(red,green,blue):
+
     red+=5
     if red>255:
         red = red-255
@@ -93,7 +139,29 @@ def atmenetColor(red,green,blue):
         blue = blue-255
 
     return ("#"+hex(red)[-2:]+hex(green)[-2:]+hex(blue)[-2:]).replace("x","0"),red, green, blue
+
+
+def utkozes():
+    f=canvas.bbox(labdaLista[-1])
+    fkozep=[(f[0]+f[2])/2,(f[1]+f[3])/2]
+
+    print(len(labdaLista))
+    for egylabda in labdaLista[:-1]:
+        k=canvas.bbox(egylabda)
+        kkozep=[(k[0]+k[2])/2,(k[1]+k[3])/2]
+
+        x=fkozep[0]-kkozep[0]
+        y=fkozep[1]-kkozep[1]
+        
+        if x**2+y**2 <= (labdaSize+kajaSize)**2:
+            print("DIE!!")
+            halal=True
     
+
+
+
+
+
 print(randomcolor())
 
 
