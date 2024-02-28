@@ -83,7 +83,6 @@ class Lampa(Jel):
 	def rajz(self):
 		dx=self.r/math.sqrt(2)
 		self.r=self.meret*0.25
-
 		vonalak=[
 			[
 				self.x, self.y+self.meret*0.5,
@@ -110,6 +109,30 @@ class Lampa(Jel):
 		]
 		Jel.rajz(self,vonalak,korok)
 
+
+
+class Ellenallas(Jel):
+	def rajz(self):
+		
+		vonalak=[
+			[
+				self.x, self.y+self.meret*0.5,
+				self.x+self.meret*0.25, self.y+self.meret*0.5,
+			],
+			[
+				self.x+self.meret*0.25, self.y+self.meret*0.4,
+				self.x+self.meret*0.25, self.y+self.meret*0.6,
+				self.x+self.meret*0.75, self.y+self.meret*0.6,
+				self.x+self.meret*0.75, self.y+self.meret*0.4,
+				self.x+self.meret*0.25, self.y+self.meret*0.4,
+			],
+			[
+				self.x+self.meret*0.75, self.y+self.meret*0.5,
+				self.x+self.meret*1.0, self.y+self.meret*0.5,
+			],
+		]
+		
+		Jel.rajz(self,vonalak)
 #ablak létrehozása
 win=Tk()
 
@@ -133,4 +156,7 @@ kapcsolo1=Kapcsolo(300,100,100,canvas)
 
 lampa1=Lampa(500,100,100,canvas)
 lampa1.rajz()
+
+ellenallas1=Ellenallas(700,100,100,canvas)
+ellenallas1.rajz()
 win.mainloop()
