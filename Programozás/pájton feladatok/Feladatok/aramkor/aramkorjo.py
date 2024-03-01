@@ -44,12 +44,24 @@ class Jel:
 			],
 			
 			]
+		elif (sajatbkp==1 and masikbkp==1) and self.x < masik.x < self.x+self.meret:
+			vonalak=[
+			[
+				self.bkp[sajatbkp][0],self.bkp[sajatbkp][1],
+				(self.bkp[sajatbkp][0]+masik.x)/2,	self.bkp[sajatbkp][1],
+				(self.bkp[sajatbkp][0]+masik.x)/2,	masik.y+masik.meret*1.2,
+				masik.x+masik.meret*1.2,							masik.y+masik.meret*1.2,
+				masik.x+masik.meret*1.2,							masik.bkp[masikbkp][1],
+				masik.bkp[masikbkp][0],masik.bkp[masikbkp][1],
+			],
+			
+			]
 		elif (sajatbkp==1 and masikbkp==1) and self.bkp[sajatbkp][0] < masik.bkp[masikbkp][0]:
 			vonalak=[
 			[
 				self.bkp[sajatbkp][0],self.bkp[sajatbkp][1],
-				(self.bkp[sajatbkp][0]+masik.bkp[masikbkp][0])/2,	self.bkp[sajatbkp][1],
-				(self.bkp[sajatbkp][0]+masik.bkp[masikbkp][0])/2,	masik.y+masik.meret*1.2,
+				(self.bkp[sajatbkp][0]+masik.x)/2,	self.bkp[sajatbkp][1],
+				(self.bkp[sajatbkp][0]+masik.x)/2,	masik.y+masik.meret*1.2,
 				masik.x+masik.meret*1.2,							masik.y+masik.meret*1.2,
 				masik.x+masik.meret*1.2,							masik.bkp[masikbkp][1],
 				masik.bkp[masikbkp][0],masik.bkp[masikbkp][1],
@@ -194,11 +206,11 @@ canvas=Canvas(win, width=600, height=600, bg=jatekHatter)
 #canvas akkora amekkora az ablak
 canvas.pack(fill = BOTH, expand = 1)
 
-elem1=Elem(100,100,100,canvas)
+elem1=Elem(500,100,100,canvas)
 #elem1.rajz()
-kapcsolo1=Kapcsolo(500,200,100,canvas)
+kapcsolo1=Kapcsolo(200,200,100,canvas)
 
-lampa1=Lampa(300,300,100,canvas)
+lampa1=Lampa(10,210,100,canvas)
 lampa1.rajz()
 lampa1.vezetek(kapcsolo1)
 lampa1.vezetek(kapcsolo1,masikbkp=1)
