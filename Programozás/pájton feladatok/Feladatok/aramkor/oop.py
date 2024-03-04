@@ -48,3 +48,27 @@ macska2.eltunt()
 macska2.tulajdon()
 
 #MÁSIK MACSKA KÉSZÍTÉSE (1<) egy két függvény meg tulajdonság
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
