@@ -1,0 +1,1 @@
+set __COMPAT_LAYER=RunAsInvoker start TLauncher-Installer-1.3.7
