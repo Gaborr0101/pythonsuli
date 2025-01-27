@@ -1,0 +1,24 @@
+body{
+    background-color: antiquewhite;
+}
+#asztal
+{
+    background-color: aquamarine;
+    min-height: 300px;
+    overflow: auto;
+}
+
+.kartya
+{
+    height: 150px;
+    width: 200px;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-image: url("images.jpg");
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    margin: 5px;
+    _float: left;
+}
