@@ -15,10 +15,18 @@ body{
     background-color: blue;
     border: 2px solid black;
     border-radius: 15px;
-    background-image: url("images.jpg");
+    _background-image: url("images.jpg");
     background-size: cover;
     background-position: center;
     display: inline-block;
     margin: 5px;
     _float: left;
+}
+
+.gameover
+{
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+    background-color: blueviolet;
 }
