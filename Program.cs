@@ -41,6 +41,29 @@
             Console.WriteLine("A virágágyás szine, ha csak az első ültet: {0}", szin);
             Console.WriteLine("A virágágyás színei: {0}", String.Join(" ", szinek));
 
+            int ures =0
+            for (int i = 1; i <= agyasDb; i++) {
+            
+                darab=0;
+                for (int k = 0; k <= felajanlasok.Count; k++) {
+                    if (felajanlasok[k].benneVanEz(i))
+                    {
+
+                    darab++; }}
+                
+                
+                }
+                if (darab == 0)
+                {
+                ures++;
+                }
+
+            if (ures == 0) {
+            Console.WriteLine()
+                    }
+
+
+            }
 
 
             Console.ReadKey();
